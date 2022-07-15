@@ -7,7 +7,12 @@ img {
   padding-top: 60px;
   background-color: #fff5f6;
 }
-
+.about .container {
+  @include desktop {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .about__label {
   margin-top: 0;
   margin-bottom: 15px;
@@ -18,9 +23,13 @@ img {
   text-transform: uppercase;
   color: var(--third-font-color);
   @include tablet {
-      font-size: 26px;
-      line-height: 1.15;
+    font-size: 26px;
+    line-height: 1.15;
     }
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 
 .about__title {
@@ -38,6 +47,11 @@ img {
       line-height: 1.25;
       margin-bottom: 40px;
     }
+  @include desktop {
+    font-size: 58px;
+    line-height: 1.14;
+    margin-bottom: 60px;
+  }
 }
 
 .about__info {
@@ -63,10 +77,26 @@ img {
       min-width: 704px;
       background-size: 0;
     }
+  @include desktop {
+    background-image: url('../images/about-bg-milk-desk-1x.png');
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    background-position: top 72% left 50%;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/about-bg-milk-desk-2x.png');
+  }
+  }
 }
 .about__image {
     @include tablet {
         width: 336px;
+    }
+    @include desktop {
+      width: 501px;
     }
 }
 .about__column {
@@ -76,6 +106,10 @@ img {
         flex-direction: column;
         align-items: flex-start;
         width: 334px;
+    }
+    @include desktop {
+      margin-left: 99px;
+      width: 463px;
     }
 }
 .about__dark-text {
@@ -88,6 +122,10 @@ img {
       padding-right: 0;
       margin-bottom: 22px;
     }
+  @include desktop {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
 }
 
 .about__light-text {
@@ -97,11 +135,18 @@ img {
   @include tablet {
       padding-right: 0;
     }
+  @include desktop {
+    line-height: 1.94;
+  }
 }
 
 .about__light-text ~ .about__light-text {
   margin-bottom: 20px;
   margin-top: 20px;
+  @include desktop {
+    margin-bottom: 40px;
+    margin-top: 42px;
+  }
 }
 
 .about__btn {
