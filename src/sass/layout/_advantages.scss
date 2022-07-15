@@ -40,38 +40,36 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
-  //   outline: #d41443 1px solid;
 }
 .advantage_icon-milk::before {
   content: '';
-  background-image: url(/src/images/advantages-bucket-mob-1x.png);
+  background-image: url(../images/advantages-bucket-mob-1x.png);
 
   @include tablet {
-    background-image: url(/src/images/advantages-bucket-tab-1x.png);
+    background-image: url(../images/advantages-bucket-tab-1x.png);
   }
   @include desktop {
-    background-image: url(/src/images/advantages-bucket-desk-1x.png);
+    background-image: url(../images/advantages-bucket-desk-1x.png);
   }
 }
 .advantage_icon-apple:before {
   content: '';
-  background-image: url(/src/images/advantages-bucket&apples-mob-1x.png);
+  background-image: url(../images/advantages-bucket&apples-mob-1x.png);
   @include tablet {
-    background-image: url(/src/images/advantages-bucket&apples-tab-1x.png);
+    background-image: url(../images/advantages-bucket&apples-tab-1x.png);
   }
   @include desktop {
-    background-image: url(/src/images/advantages-bucket&apples-desk-1x.png);
+    background-image: url(../images/advantages-bucket&apples-desk-1x.png);
   }
 }
 .advantage_icon-heart:before {
   content: '';
-  background-image: url(/src/images/advantages-heart-mob-1x.png);
+  background-image: url(../images/advantages-heart-mob-1x.png);
   @include tablet {
-    background-image: url(/src/images/advantages-heart-tab-1x.png);
+    background-image: url(../images/advantages-heart-tab-1x.png);
   }
   @include desktop {
-    background-image: url(/src/images/advantages-heart-desk-1x.png);
+    background-image: url(../images/advantages-heart-desk-1x.png);
   }
 }
 @media (min-device-pixel-ratio: 2),
@@ -80,13 +78,13 @@
   (min-resolution: 2dppx) {
   .advantage_icon-milk::before {
     content: '';
-    background-image: url(/src/images/advantages-bucket-mob-2x.png);
+    background-image: url(../images/advantages-bucket-mob-2x.png);
 
     @include tablet {
-      background-image: url(/src/images/advantages-bucket-tab-2x.png);
+      background-image: url(../images/advantages-bucket-tab-2x.png);
     }
     @include desktop {
-      background-image: url(/src/images/advantages-bucket-desk-2x.png);
+      background-image: url(../images/advantages-bucket-desk-2x.png);
     }
   }
 }
@@ -97,12 +95,12 @@
   (min-resolution: 2dppx) {
   .advantage_icon-apple:before {
     content: '';
-    background-image: url(/src/images/advantages-bucket&apples-mob-2x.png);
+    background-image: url(../images/advantages-bucket&apples-mob-2x.png);
     @include tablet {
-      background-image: url(/src/images/advantages-bucket&apples-tab-2x.png);
+      background-image: url(../images/advantages-bucket&apples-tab-2x.png);
     }
     @include desktop {
-      background-image: url(/src/images/advantages-bucket&apples-desk-2x.png);
+      background-image: url(../images/advantages-bucket&apples-desk-2x.png);
     }
   }
 }
@@ -113,12 +111,12 @@
   (min-resolution: 2dppx) {
   .advantage_icon-heart:before {
     content: '';
-    background-image: url(/src/images/advantages-heart-mob-2x.png);
+    background-image: url(../images/advantages-heart-mob-2x.png);
     @include tablet {
-      background-image: url(/src/images/advantages-heart-tab-2x.png);
+      background-image: url(../images/advantages-heart-tab-2x.png);
     }
     @include desktop {
-      background-image: url(/src/images/advantages-heart-desk-2x.png);
+      background-image: url(../images/advantages-heart-desk-2x.png);
     }
   }
 }
@@ -137,8 +135,6 @@
 
   color: var(--secondary-font-color);
 
-  //   outline: #d41443 1px solid;
-
   @include tablet {
     margin-bottom: 13px;
     margin-top: 36px;
@@ -153,7 +149,6 @@
 
     font-size: 58px;
     line-height: 66px;
-    // text-align: right;
     text-transform: uppercase;
   }
 }
@@ -165,8 +160,6 @@
   font-size: 12px;
   line-height: 1.67;
   color: var(--dark-font-color);
-
-  //   outline: #d41443 1px solid;
 
   @include tablet {
     font-size: 14px;
