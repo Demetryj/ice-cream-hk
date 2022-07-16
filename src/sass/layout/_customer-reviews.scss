@@ -208,4 +208,35 @@
       font-size: 20px;
     }
   }
+
+  .slick-dots {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 32px;
+
+    li:not(:last-child) {
+      margin-right: 18px;
+    }
+
+    button {
+      font-size: 0;
+      width: 16px;
+      height: 16px;
+      border-color: transparent;
+      border-radius: 50%;
+      background-color: #d9d9d9;
+    }
+
+    .slick-active {
+      button {
+        background-color: transparent;
+        background-image: url(/src/images/review-slider-active.svg);
+        background-size: 16px 16px;
+        background-position: center;
+        border-radius: 0%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
 }
