@@ -2,6 +2,15 @@
   &__card {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @include tablet {
+      padding-bottom: 80px;
+    }
+
+    @include desktop {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
   }
 
   &__figure {
@@ -13,22 +22,47 @@
 
     border: 50%;
     overflow: hidden;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+
+    @include desktop {
+      margin-bottom: 16px;
+    }
   }
 
   &__body {
     position: relative;
-    margin-bottom: 42px;
+    margin-bottom: 36px;
 
     width: 280px;
     height: 308px;
 
     background-color: #fafafa;
+
+    @include tablet {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 24px;
+
+      width: 620px;
+      height: 164px;
+    }
+
+    @include desktop {
+      margin-bottom: 36px;
+
+      width: 968px;
+      height: 138px;
+    }
   }
 
   &__underline {
     position: absolute;
     top: 76px;
     left: 50px;
+
     width: 180px;
     height: 217px;
 
@@ -37,6 +71,34 @@
       #fafafa00 1%,
       #fafafa00 14%
     );
+
+    @include tablet {
+      top: 68px;
+      left: 6px;
+
+      width: 608px;
+      height: 60px;
+
+      background-image: repeating-linear-gradient(
+        #e1e1e1,
+        #fafafa00 3%,
+        #fafafa00 45%
+      );
+    }
+
+    @include desktop {
+      top: 76px;
+      left: 73px;
+
+      width: 821px;
+      height: 31px;
+
+      background-image: repeating-linear-gradient(
+        #e1e1e1,
+        #fafafa00 5%,
+        #fafafa00 95%
+      );
+    }
   }
 
   &__copy {
@@ -51,6 +113,22 @@
     text-align: center;
 
     color: var(--dark-font-color);
+
+    @include tablet {
+      padding: 37px 55px 44px 51px;
+
+      font-size: 14px;
+      line-height: 2.16;
+      text-align: center;
+      letter-spacing: 0.04em;
+    }
+
+    @include desktop {
+      padding: 47px 109px 39px 109px;
+
+      font-size: 16px;
+      line-height: 1.86;
+    }
   }
 
   &__copy::before {
@@ -72,6 +150,42 @@
       (min-resolution: 2dppx) {
       background-image: url(/src/images/review-befor-2x.png);
     }
+
+    @include tablet {
+      top: 20px;
+      left: 6px;
+    }
+
+    @include desktop {
+      top: 32px;
+      left: 72px;
+    }
+  }
+
+  &__copy::after {
+    content: ' ';
+    position: absolute;
+
+    bottom: -16px;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 32px;
+    height: 4px;
+
+    background-image: url(/src/images/review-marker.svg);
+    background-size: 32px 4px;
+
+    @include tablet {
+      bottom: -4px;
+      left: 50%;
+    }
+
+    @include desktop {
+      bottom: -16px;
+      left: 50%;
+    }
   }
 
   &__footer {
@@ -85,5 +199,13 @@
     text-align: center;
 
     color: var(--dark-font-color);
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include desktop {
+      font-size: 20px;
+    }
   }
 }
