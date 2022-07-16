@@ -144,10 +144,7 @@
     background-image: url(/src/images/review-befor-1x.png);
     background-size: 54px 40px;
 
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include screen2x {
       background-image: url(/src/images/review-befor-2x.png);
     }
 
@@ -221,20 +218,22 @@
 
     button {
       font-size: 0;
-      width: 16px;
-      height: 16px;
+      width: 12px;
+      height: 12px;
+      background-image: url(/src/images/review-slider-non.svg);
+      background-size: 12px 12px;
+      background-position: center;
+      background-repeat: no-repeat;
       border-color: transparent;
-      border-radius: 50%;
-      background-color: #d9d9d9;
+      background-color: transparent;
     }
 
     .slick-active {
       button {
         background-color: transparent;
         background-image: url(/src/images/review-slider-active.svg);
-        background-size: 16px 16px;
+        background-size: 12px 12px;
         background-position: center;
-        border-radius: 0%;
         background-repeat: no-repeat;
       }
     }
