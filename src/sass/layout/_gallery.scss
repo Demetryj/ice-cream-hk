@@ -1,6 +1,14 @@
 .gallery {
-  background-image: linear-gradient(to bottom, #fff5f6 17%, #ffffff 17%);
+  background-image: linear-gradient(to bottom, #fff5f6 14%, #ffffff 14%);
   padding-bottom: 60px;
+
+  @include tablet {
+    background-image: linear-gradient(to bottom, #fff5f6 43%, #ffffff 43%);
+  }
+
+  @include desktop {
+    background-image: linear-gradient(to bottom, #fff5f6 18%, #ffffff 18%);
+  }
 }
 
 .gallery__container {
