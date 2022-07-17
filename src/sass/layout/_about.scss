@@ -4,14 +4,14 @@ img {
 }
 
 .about {
+  & .container {
   padding-top: 60px;
   background-color: #fff5f6;
-}
-.about .container {
   @include desktop {
     padding-left: 0;
     padding-right: 0;
   }
+}
 }
 .about__label {
   margin-top: 0;
@@ -69,26 +69,35 @@ img {
     (min-resolution: 2dppx) {
     background-image: url('../images/about-bg-milk-mob-2x.png');
   }
-    @include tablet {
+  @include tablet {
       font-size: 14px;
       line-height: 1.76;
       display: flex;
       align-items: center;
       min-width: 704px;
       background-size: 0;
+      background-image: url('../images/about-bg-milk-tab-1x.png');
+      background-repeat: no-repeat;
+      background-size: 702px;
+      background-position: top 0 left 0;
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url('../images/about-bg-milk-tab-2x.png');
+        }
     }
   @include desktop {
     background-image: url('../images/about-bg-milk-desk-1x.png');
     background-repeat: no-repeat;
     background-size: 1200px;
     background-position: top 72% left 50%;
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/about-bg-milk-desk-2x.png');
-  }
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/about-bg-milk-desk-2x.png');
+      }
   }
 }
 .about__image {
@@ -164,6 +173,10 @@ img {
   border-color: transparent;
   cursor: pointer;
   outline: none;
+  transition: background-color 250ms;
+    &:hover, &:focus {
+      background-color: #ecebeb;
+    }
   @include tablet {
       font-size: 16px;
       line-height: 1.31;
