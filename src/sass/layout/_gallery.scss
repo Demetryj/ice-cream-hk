@@ -1,0 +1,13 @@
+.gallery {
+  background-image: linear-gradient(to bottom, #fff5f6 17%, #ffffff 17%);
+  padding-bottom: 60px;
+}
+
+.gallery__container {
+  padding: 0;
+
+  @include desktop {
+    padding-left: 94px;
+    padding-right: 94px;
+  }
+}
