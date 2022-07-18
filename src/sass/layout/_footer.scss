@@ -1,7 +1,10 @@
+.section {
+  background-color: #fff5f6;
+}
 .footer__container {
   position: relative;
   padding-top: 20px;
-  background: #fff5f6;
+
   &::after {
     position: absolute;
     bottom: 61px;
@@ -19,6 +22,7 @@
     }
   }
   @media screen and (min-width: 1200px) {
+    padding-top: 60px;
     &::after {
       width: 1167px;
       left: 17px;
@@ -31,6 +35,9 @@
   @media screen and (min-width: 768px) {
     margin: 0;
   }
+  @media screen and (min-width: 1200px) {
+    width: 477px;
+  }
 }
 .footer__titel-one {
   font-family: 'Titan One', cursive;
@@ -40,6 +47,10 @@
   color: #ffa5ba;
   margin: 0 0 16px 0;
   padding: 0;
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+  }
 }
 .footer__titel-two {
   font-family: 'Titan One', cursive;
