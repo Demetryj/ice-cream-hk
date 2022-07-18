@@ -1,12 +1,15 @@
 .advantage {
   text-align: left;
   background-color: #fff5f6;
-  padding: 40px 50px 87px 0px;
+}
+
+.advantage .advantage_container {
+  padding: 40px 50px 60px 0px;
   @include tablet {
-    padding: 60px 177px 247px 0px;
+    padding: 60px 177px 64px 0px;
   }
   @include desktop {
-    padding: 60px 80px 209px 0px;
+    padding: 60px 80px 120px 0px;
   }
 }
 
