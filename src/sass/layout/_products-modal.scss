@@ -41,14 +41,10 @@
     top: 15px;
     right: 15px;
     border-radius: 50%;
-    background-position: center;
-    border-color: transparent;
-    transition: color 250ms linear, background-color 250ms linear;
-
-    &:hover,
-    &:focus {
-        cursor: pointer;
-    }
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D41443;
+    cursor: pointer;
 }
 
 .products--modal__close-svg {
