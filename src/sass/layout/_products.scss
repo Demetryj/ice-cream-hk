@@ -214,7 +214,7 @@
             background-image: url("../images/white-three-dots.svg");
             width: 26px;
             height: 6px;
-            background-size: cover;
+            background-size: contain;
             fill: #ffffff;
         }
 }
@@ -259,7 +259,13 @@
     height: 40px;
     border: 1px solid transparent;
     border-radius: 50%;
-    border-color: #ffffff;
+    background-color: #ffffff;
     color: #D41443;
     fill: currentColor;
+    transition: color 250ms linear, background-color 250ms linear;
+    &:hover,
+    &:focus {
+    background-color: #D41443;
+    color: #ffffff;
+    }
 }
