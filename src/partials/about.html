@@ -1,4 +1,4 @@
-<section class="about">
+<section class="about" id="about">
     <div class="container">
         <p class="about__label">tradition and love</p>
         <h2 class="about__title">how it’s made?</h2>
@@ -6,17 +6,22 @@
             <picture class="about__image">
                 <source srcset="./images/about-cow-desk-1x.png 1x, ./images/about-cow-desk-2x.png 2x"
                     media="(min-width: 1200px)">
-                <source srcset="./images/about-cow-tab-1x.png 1x, ./images/about-cow-tab-2x.png 2x" media="(min-width: 768px)">
-                <source srcset="./images/about-cow-mob-1x.png 1x, ./images/about-cow-mob-2x.png 2x" media="(min-width: 320px)">
+                <source srcset="./images/about-cow-tab-1x.png 1x, ./images/about-cow-tab-2x.png 2x"
+                    media="(min-width: 768px)">
+                <source srcset="./images/about-cow-mob-1x.png 1x, ./images/about-cow-mob-2x.png 2x"
+                    media="(min-width: 320px)">
                 <img src="./images/about-cow-desk-1x.png" alt="cow and jug of milk" width="501" height="501">
             </picture>
             <div class="about__column">
-                <p class="about__dark-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
+                <p class="about__dark-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+                    cursus,
                     faucibus lorem
                     eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
-                <p class="about__light-text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
+                <p class="about__light-text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+                    Mauris
                     rhoncus orci
-                    in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa
+                    in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+                    Cras massa
                     nibh,
                     tincidunt.</p>
                 <p class="about__light-text">Aliquam erat volutpat. Aenean accumsan.</p>
@@ -29,3 +34,30 @@
         </div>
     </div>
 </section>
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" data-modal-close class="modal__btn-close modal__btn-close--hover modal__btn-close--focus">
+            <svg class="modal__icon-btn-close" width="10" height="10">
+                <use href="./images/sprite-new.svg#close-btn"></use>
+            </svg>
+        </button>
+
+        <form class="modal__form">
+            <p class="modal__title">HOW IT’S MADE?</p>
+            <p class="modal__text">
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
+                faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+            </p>
+            <p class="modal__text">
+                Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
+                rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+                maximus. Cras massa
+                nibh, tincidunt.
+            </p>
+            <p class="modal__text">
+                Aliquam erat volutpat. Aenean accumsan.
+            </p>
+        </form>
+    </div>
+</div>
