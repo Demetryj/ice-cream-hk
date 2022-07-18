@@ -4,12 +4,19 @@
 }
 
 .advantage .advantage_container {
-  padding: 40px 50px 60px 0px;
+  padding-top: 40px;
+  padding-right: 50px;
+  padding-bottom: 60px;
+
   @include tablet {
-    padding: 60px 177px 64px 0px;
+    padding-top: 60px;
+    padding-right: 177px;
+    padding-bottom: 64px;
   }
   @include desktop {
-    padding: 60px 80px 120px 0px;
+    padding-top: 60px;
+    padding-right: 80px;
+    padding-bottom: 120px;
   }
 }
 
