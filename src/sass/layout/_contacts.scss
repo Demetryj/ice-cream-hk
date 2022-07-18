@@ -24,6 +24,10 @@
     margin-right: -16px;
     margin-left: -16px;
   }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
 }
 
 .contacts__item {
@@ -40,18 +44,18 @@
     max-width: 224px;
   }
 
-  @media screen and (max-width: 768px) {
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
-  }
-
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     margin-right: 16px;
     margin-left: 16px;
     min-width: 368px;
     padding: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 }
 
