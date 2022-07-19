@@ -1,7 +1,4 @@
-/* Стили для подложки */
-
 .overlay {
-  /* Скрываем подложку  */
   opacity: 0;
   visibility: hidden;
 
@@ -16,17 +13,14 @@
     visibility 300ms ease-in-out, backdrop-filter 300ms ease-in-out;
 }
 
-/* Стили для модальных окон */
-
 .modal__open {
-  /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  z-index: 70;
+  z-index: 80;
 
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -39,11 +33,11 @@
   opacity: 1;
   visibility: visible;
   backdrop-filter: blur(10px);
-  overflow: hidden;
-  position: fixed;
 }
 
 .modal__open.active {
+  opacity: 1;
+  visibility: visible;
   transform: translate(-50%, -50%) scale(1);
 }
 
