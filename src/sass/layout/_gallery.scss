@@ -1,7 +1,4 @@
 .gallery {
-  padding-top: 30px;
-  padding-bottom: 30px;
-
   background-image: linear-gradient(
     to bottom,
     #fff5f6 15%,
@@ -9,8 +6,6 @@
   );
 
   @include tablet {
-    padding-top: 32px;
-
     background-image: linear-gradient(
       to bottom,
       #fff5f6 43%,
@@ -19,9 +14,6 @@
   }
 
   @include desktop {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
     background-image: linear-gradient(
       to bottom,
       #fff5f6 20%,
