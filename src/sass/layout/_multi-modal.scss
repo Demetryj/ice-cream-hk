@@ -1,0 +1,52 @@
+/* Стили для подложки */
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 60;
+  transition: box-shadow 300ms ease-in-out, opacity 300ms ease-in-out,
+    visibility 300ms ease-in-out, backdrop-filter 300ms ease-in-out;
+}
+
+/* Стили для модальных окон */
+
+.modal__open {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 70;
+
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: box-shadow 300ms ease-in-out, opacity 300ms ease-in-out,
+    transform 300ms ease-in-out, visibility 300ms ease-in-out;
+}
+
+.modal__open.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  position: fixed;
+}
+
+.modal__open.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.scroll.no {
+  overflow: hidden;
+}

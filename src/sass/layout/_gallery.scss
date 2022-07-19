@@ -1,4 +1,7 @@
 .gallery {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   background-image: linear-gradient(
     to bottom,
     #fff5f6 15%,
@@ -6,6 +9,8 @@
   );
 
   @include tablet {
+    padding-top: 32px;
+
     background-image: linear-gradient(
       to bottom,
       #fff5f6 43%,
@@ -14,18 +19,19 @@
   }
 
   @include desktop {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-image: linear-gradient(
       to bottom,
       #fff5f6 20%,
       var(--primary-font-color) 20%
     );
   }
-
-  padding-bottom: 60px;
 }
 
 .gallery__container {
-  padding: 0;
+  padding: 0px;
 
   @include desktop {
     padding-left: 94px;
@@ -83,7 +89,7 @@
   }
 
   &__item {
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__item:hover {

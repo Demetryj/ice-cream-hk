@@ -1,63 +1,100 @@
-// MODAL
-.backdrop {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background: rgba(0, 0, 0, 0.2);
-    transition: opacity 400ms, visibility 400ms;
+.products--modal {
+  position: relative;
+  width: 300px;
+  height: 610px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffb8ca;
+  background-image: url(/src/images/products-ice-cream-mob-modal-1x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  padding: 50px 25px;
+
+  @include screen2x {
+    background-image: url(/src/images/products-ice-cream-mob-modal-2x.png);
+  }
+
+  @include tablet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    background-image: url(/src/images/products-ice-cream-tab-desk-modal-1x.png);
+    transform: translate(-50%, -50%);
+    padding: 50px 50px;
+
+    @include screen2x {
+      background-image: url(/src/images/products-ice-cream-tab-desk-modal-2x.png);
+    }
+  }
 }
 
-.products--modal {
-    position: relative;
-    width: 320px;
-    height: 610px;
-    margin-left: auto;
-    margin-right: auto;
-    background: linear-gradient(90deg, rgba(255, 184, 202, 1) 0%, rgba(240, 209, 165, 1) 33%, rgba(194, 226, 151, 1) 100%);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 24px;
-    padding: 40px;
+.products--modal-1 {
+  background-color: #f0d1a5;
+  background-image: url(/src/images/products-coffee-mob-modal-1x.png);
 
-    @include tablet {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  @include screen2x {
+    background-image: url(/src/images/products-coffee-mob-modal-2x.png);
+  }
 
-    @include desktop {
-        padding-top: 130px;
-        width: 450px;
-        height: 610px;
+  @include tablet {
+    background-image: url(/src/images/products-coffee-tab-desk-modal-1x.png);
+
+    @include screen2x {
+      background-image: url(/src/images/products-coffee-tab-desk-modal-2x.png);
     }
+  }
+}
+
+.products--modal-2 {
+  background-color: #c2e297;
+  background-image: url(/src/images/products-milkshake-mob-modal-1x.png);
+
+  @include screen2x {
+    background-image: url(/src/images/products-milkshake-mob-modal-2x.png);
+  }
+
+  @include tablet {
+    background-image: url(/src/images/products-milkshake-tab-desk-modal-1x.png);
+
+    @include screen2x {
+      background-image: url(/src/images/products-milkshake-tab-desk-modal-2x.png);
+    }
+  }
 }
 
 .products--modal__close {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 15px;
-    right: 15px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #D41443;
-    cursor: pointer;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d41443;
+  cursor: pointer;
 }
 
 .products--modal__close-svg {
-    color: #D41443;
-    fill: currentColor;
+  color: #d41443;
+  fill: currentColor;
 }
 
 .products--modal__title {
-    display: block;
-    text-align: center;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 2.5;
-    letter-spacing: 0.1em;
-    color: #FFFFFF;
+  overflow: auto;
+  width: 250px;
+  height: 510px;
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+
+  @include tablet {
+    width: 350px;
+  }
 }

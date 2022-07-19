@@ -1,12 +1,15 @@
 .contacts {
+  padding-top: 30px;
   padding-bottom: 20px;
   background-image: linear-gradient(to bottom, #fff 0 21%, #fff5f6 21% 100%);
 
   @media screen and (min-width: 768px) {
+    padding-top: 40px;
     background-image: linear-gradient(to bottom, #fff 0 45%, #fff5f6 45% 100%);
   }
 
   @media screen and (min-width: 768px) {
+    padding-top: 60px;
     padding-bottom: 60px;
     background-image: linear-gradient(to bottom, #fff 0 14%, #fff5f6 14% 100%);
   }

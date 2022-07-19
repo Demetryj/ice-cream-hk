@@ -35,9 +35,9 @@
       </button>
 
       <button
-        class="button-hero-header button-hero-header--top"
-        type="button"
-       
+        class="button-hero-header button-hero-header--top js-open-modal"
+        type="button" 
+       data-modal="1"
       >
         Buy now<svg class="button-hero-header__svg" width="5" height="8">
           <use href="/src/images/sprite-new.svg#arrow-button"></use>
@@ -58,7 +58,7 @@
                 >
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="">About us</a>
+                <a class="navigation__link" href="#gallery">About us</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="#about">How it’s made?</a>
@@ -72,8 +72,9 @@
             </ul>
           </nav>
           <button
-            class="button-hero-header button-hero-header--mob-menu"
+            class="button-hero-header button-hero-header--mob-menu js-open-modal"
             type="button"
+            data-modal="1"
           >
             Buy now<svg class="button-hero-header__svg" width="8" height="14">
               <use href="/src/images/sprite-new.svg#arrow-button"></use>
@@ -144,7 +145,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-          <a class="hero__circle-for-arrow" href="">
+          <a class="hero__circle-for-arrow js-open-modal" data-modal="2" href="">
             <svg class="hero__arrow" width="6" height="5">
               <use class="" href="./images/sprite-new.svg#arrow-right2"></use>
             </svg>
