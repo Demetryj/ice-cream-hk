@@ -1,11 +1,7 @@
 .header-hero {
   background: #ffb8ca;
 }
-
-.header__container {
-  display: flex;
-  justify-content: space-between;
-
+.header {
   padding-top: 8px;
 
   @media screen and (min-width: 768px) {
@@ -15,6 +11,11 @@
   @media screen and (min-width: 1200px) {
     padding-top: 37px;
   }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__button-box {
@@ -105,7 +106,6 @@
     top: 0;
     right: 0;
 
-    // display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
 
@@ -120,45 +120,6 @@
     }
 
     background-color: #e17992;
-  }
-}
-
-.navigation__item {
-  @media screen and (max-width: 1199.98px) {
-    position: relative;
-
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-
-  &::before {
-    content: '';
-    display: block;
-    width: calc(100% + 40px);
-    height: 1px;
-    background-color: #e18298;
-    position: absolute;
-    left: -20px;
-    top: 0;
-
-    @media screen and (min-width: 1200px) {
-      display: none;
-    }
-  }
-
-  &--last::after {
-    content: '';
-    display: block;
-    width: calc(100% + 40px);
-    height: 1px;
-    background-color: #e18298;
-    position: absolute;
-    left: -20px;
-    bottom: 0;
-
-    @media screen and (min-width: 1200px) {
-      display: none;
-    }
   }
 }
 
@@ -254,21 +215,33 @@
   }
 }
 
-.navigation__list {
+.navigation {
   @media screen and(min-width: 1200px) {
-    display: flex;
-    gap: 35px;
-
     margin-right: 141px;
   }
 }
 
+.navigation__list {
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    gap: 35px;
+  }
+}
+
 .navigation__link {
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
 
   transition: color 250ms linear;
+
+  @media screen and (max-width: 1199.98px) {
+    position: relative;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 
   @media screen and(min-width: 1200px) {
     font-size: 16px;
@@ -276,6 +249,36 @@
   }
 
   color: var(--primary-font-color);
+
+  &::before {
+    content: '';
+    display: block;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: #e18298;
+    position: absolute;
+    left: -20px;
+    top: 0;
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &--last::after {
+    content: '';
+    display: block;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: #e18298;
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
 
   &:hover,
   &:focus {
