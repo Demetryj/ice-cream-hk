@@ -1,16 +1,14 @@
 .customer-reviews {
-  &__card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include tablet {
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
     padding-top: 60px;
     padding-bottom: 60px;
-
-    @include tablet {
-      padding-bottom: 80px;
-    }
-
-    @include desktop {
-      padding-top: 120px;
-      padding-bottom: 120px;
-    }
   }
 
   &__figure {

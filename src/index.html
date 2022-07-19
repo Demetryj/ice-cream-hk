@@ -25,9 +25,11 @@
     <script type="module" src="./index.js"></script>
     <script type="module" src="./js/mobile-menu.js"></script>
 
+    <script type="module" src="./js/multi-modal.js"></script>
+
     <script type="module" src="./js/slick-slider.js"></script>
   </head>
-  <body>
+  <body class="scroll">
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <include src="./partials/hero-header.html"></include>
     <include src="./partials/products.html"></include>
@@ -39,6 +41,10 @@
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
     <include src="./partials/modal_hero_header.html"></include>
+    <include src="./partials/modal-about.html"></include>
+
+    <div class="overlay js-overlay-modal"></div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       type="text/javascript"
