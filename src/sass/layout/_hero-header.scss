@@ -27,7 +27,7 @@
   justify-content: center;
   align-items: center;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     margin-right: 32px;
   }
 
@@ -67,7 +67,7 @@
 .mobile-menu {
   z-index: 50;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     position: fixed;
     top: 0;
     right: 0;
@@ -100,7 +100,7 @@
     align-items: center;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     position: fixed;
     top: 0;
     right: 0;
@@ -124,7 +124,7 @@
 }
 
 .navigation__item {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     position: relative;
 
     padding-top: 12px;
@@ -213,7 +213,7 @@
 }
 
 .button-hero-header--top {
-  @media screen and(max-width: 767px) {
+  @media screen and(max-width: 767.98px) {
     display: none;
   }
 
@@ -225,7 +225,7 @@
 }
 
 .button-hero-header--mob-menu {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     margin-bottom: 20px;
 
     margin-left: auto;
@@ -239,7 +239,7 @@
   padding-top: 136px;
   padding-bottom: 158px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     overflow: hidden;
   }
 
@@ -491,7 +491,7 @@
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 }
@@ -608,7 +608,7 @@
 }
 
 .hero__img-girl {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
   position: absolute;
