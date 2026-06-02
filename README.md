@@ -1,101 +1,69 @@
-**Read in other languages: [Русский](README.md), [Polski](README.pl.md).**
+# Ice Cream Website
 
-# Parcel template
+A responsive landing page for an ice cream brand.
 
-Этот проект был создан при помощи Parcel. Для знакомства и настройки
-дополнительных возможностей [обратись к документации](https://parceljs.org/).
+The project includes a modern layout, adaptive sections, product presentation, customer reviews, contacts, and a clean visual design.
 
-## Подготовка нового проекта
+## Tech Stack
 
-1. Убедись что на компьютере установлена LTS-версия Node.js.
-   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
-2. Склонируй этот репозиторий.
-3. Измени имя папки с `parcel-project-template` на имя своего проекта.
-4. Создай новый пустой репозиторий на GitHub.
-5. Открой проект в VSCode, запусти терминал и свяжи проект с GitHub-репозиторием
-   [по инструкции](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
-6. Установи зависимости проекта в терминале командой `npm install` .
-7. Запусти режим разработки, выполнив команду `npm start`.
-8. Перейди в браузере по адресу [http://localhost:1234](http://localhost:1234).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
+- HTML
+- SCSS
+- CSS
+- JavaScript
+- Parcel
+- PostHTML Include
+- Modern Normalize
 
-## Файлы и папки
+## Features
 
-- Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
-  файлы стилей страниц. Например, для `index.html` файл стилей называется
-  `index.scss`.
-- Изображения добавляй в папку `src/images`. Сборщик оптимизирует их, но только
-  при деплое продакшн версии проекта. Все это происходит в облаке, чтобы не
-  нагружать твой компьютер, так как на слабых машинах это может занять много
-  времени.
+- Responsive layout
+- Mobile-first approach
+- Product sections
+- Customer reviews
+- Contacts section
+- Modal windows
+- Smooth visual styling
+- Optimized project structure with partials
 
-## Деплой
+## Live Demo
 
-Для настройки деплоя проекта необходимо выполнить несколько дополнительных шагов
-по настройке твоего репозитория. Зайди во вкладку `Settings` и в подсекции
-`Actions` выбери выбери пункт `General`.
-
-![GitHub actions settings](./assets/actions-config-step-1.png)
-
-Пролистай страницу до последней секции, в которой убедись что выбраны опции как
-на следующем изображении и нажми `Save`. Без этих настроек у сборки будет
-недостаточно прав для автоматизации процесса деплоя.
-
-![GitHub actions settings](./assets/actions-config-step-2.png)
-
-Продакшн версия проекта будет автоматически собираться и деплоиться на GitHub
-Pages, в ветку `gh-pages`, каждый раз когда обновляется ветка `main`. Например,
-после прямого пуша или принятого пул-реквеста. Для этого необходимо в файле
-`package.json` отредактировать поле `homepage` и скрипт `build`, заменив
-`your_username` и `your_repo_name` на свои, и отправить изменения на GitHub.
-
-```json
-"homepage": "https://your_username.github.io/your_repo_name/",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /your_repo_name/"
-},
+```txt
+https://demetryj.github.io/ice-cream-hk/
 ```
 
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
+## Installation
 
-![GitHub Pages settings](./assets/repo-settings.png)
+```bash
+npm install
+```
 
-### Статус деплоя
+## Running the Project
 
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
+Development mode:
 
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
+```bash
+npm start
+```
 
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
+The app will be available at:
 
-![Deployment status](./assets/status.png)
+```txt
+http://localhost:1234
+```
 
-### Живая страница
+## Build
 
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному в отредактированном свойстве `homepage`. Например, вот
-ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
+```bash
+npm run build
+```
 
-Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у тебя неправильное значение свойства `homepage` или скрипта `build` в
-файле `package.json`.
+## Scripts
 
-## Как это работает
+```bash
+npm start
+npm run build
+```
 
-![How it works](./assets/how-it-works.png)
+## Project Status
 
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
+This is an educational team project created for learning and practice purposes.
